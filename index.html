@@ -24,6 +24,14 @@
 			}
 
 			/* SOCIAL STYLES */
+			.social-list {
+				list-style: none;
+				padding: 0;
+				text-align: center;
+			}
+			.social-list > li {
+				display: inline-block;
+			}
 			.social-link {
 				background-color: rgb(150 150 150 / 0.5);
 				color: blue;
@@ -35,6 +43,7 @@
 			/* BIO STYLES */
 			.bio-wrapper {
 				font-size: 24px;
+				overflow: scroll;
 			}
 			.bio-box {
 				border: 1px solid black;
@@ -58,7 +67,7 @@
 	<body>
 		<div class="full-hero hero-home">
 			<h1>I'm an h1</h1>
-			<ul>
+			<ul class="social-list">
 				<li>
 					<a href="https://example.com/" class="social-link">Link</a>
 				</li>
@@ -104,7 +113,7 @@
 				<p>The Future</p>
 			</div>
 		</div>
-		<p style="clear: left;">
+		<p>
 			Learn Enough to Be Dangerous is a leader in the movement to teach the world <em>technical sophistication</em>, which includes both "hard skills" like coding, command lines, and version control, and "soft skills" like guessing keyboard shortcuts, Googling error messages, and knowing when to just reboot the darn thing.
 		</p>
 		<p>
