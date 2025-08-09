@@ -11,15 +11,21 @@ a {
 }
 
 /* HEADER STYLES */
+.header {
+	background-color: #aaa;
+	height: 300px;
+	position: relative;
+	width: 100%;
+}
 .header-nav {
 	float: right;
 	padding: 5.5vh 60px 0 0 ;
 }
-.header-nav>li {
+.header-nav > li {
 	display: inline-block;
 	margin-left: 1em;
 }
-.header-nav>li~li {
+.header-nav > li + li {
 	border-left: 1px solid rgba(0, 0, 0, 0.3);
 	padding-left: 1em;
 }
@@ -41,6 +47,14 @@ a {
 .header-nav a:active {
 	color: #ed6e2f;
 }
+.header-logo {
+	background-color: #000;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .header-logo:hover,
 .header-logo:active {
 	opacity: 0.5;
